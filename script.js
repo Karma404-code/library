@@ -41,6 +41,7 @@ function displayBook(element){
         const deleteBook = document.createElement("button");
         const lable = document.createElement("lable");
         lable.textContent = "Completed: ";
+        lable.className = "lableToggle";
 
         const changeStatus = document.createElement("input");
         changeStatus.type = "checkbox";
@@ -52,11 +53,11 @@ function displayBook(element){
         paraTitle.className = "title";
         paraTitle.appendChild(title);
 
-        let author = document.createTextNode(`By ${element.author}`);
+        let author = document.createTextNode(`By: ${element.author}`);
         paraAuthor.className = "author";
         paraAuthor.appendChild(author);
 
-        let page = document.createTextNode(`Pg ${element.pages}`);
+        let page = document.createTextNode(`Pg: ${element.pages}`);
         paraPage.className = "pages";
         paraPage.appendChild(page);
 
